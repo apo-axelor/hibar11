@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app>  
+  
+<servlet>  
+<servlet-name>Test</servlet-name>  
+<servlet-class>Test</servlet-class>  
+<servlet-class>com.axelor.Test</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>DB</display-name>
+	<servlet-name>DB</servlet-name>
+	<servlet-class>com.axelor.apps.main.DB</servlet-class>
+</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>DE</display-name>
+	<servlet-name>DE</servlet-name>
+	<servlet-class>com.axelor.apps.main.DE</servlet-class>
+</servlet>  
+  
+<servlet-mapping>
+	<servlet-name>DB</servlet-name>
+	<url-pattern>/DB</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>Test</servlet-name>
+	<url-pattern>/Test</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+	<servlet-name>DE</servlet-name>
+	<url-pattern>/DE</url-pattern>
+</servlet-mapping>  
+  
+</web-app>  
